@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="KULAuth Tap Config">
+
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:key="edit_text_launch_delay"
+            android:defaultValue="500"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Launch delay in ms" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:key="edit_text_tap_delay"
+            android:defaultValue="200"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Delay between taps in ms" />
+        <EditTextPreference
+            android:defaultValue="1"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Button 1" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="2"
+            android:key="edit_text_preference_2"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Button 2" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="3"
+            android:key="edit_text_preference_3"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Button 3" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="4"
+            android:key="edit_text_preference_4"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Button 4" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

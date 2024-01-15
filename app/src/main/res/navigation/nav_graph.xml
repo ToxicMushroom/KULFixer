@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/statusFragment">
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="me.melijn.kulfixer.SettingsActivity$SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="me.melijn.kulfixer.StatusFragment"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_status" >
+        <action
+            android:id="@+id/action_statusFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+</navigation>
