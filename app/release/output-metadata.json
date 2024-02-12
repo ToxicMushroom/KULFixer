@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "me.melijn.dndfixer",
+  "applicationId": "me.melijn.kulfixer",
   "variantName": "release",
   "elements": [
     {
