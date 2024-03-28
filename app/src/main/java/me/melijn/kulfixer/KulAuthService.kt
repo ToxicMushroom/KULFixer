@@ -25,7 +25,7 @@ class KulAuthService : AccessibilityService() {
         val info = AccessibilityServiceInfo()
         info.eventTypes =
             AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUSED or AccessibilityEvent.TYPE_VIEW_FOCUSED or AccessibilityEvent.TYPE_WINDOWS_CHANGED or
-                    AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED;
+                    AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED
         info.feedbackType = AccessibilityServiceInfo.FEEDBACK_GENERIC
         serviceInfo = info
     }
@@ -67,7 +67,8 @@ class KulAuthService : AccessibilityService() {
                 delay(startupDelay)
                 lastExec = System.currentTimeMillis()
                 val rootNode = rootInActiveWindow
-                if (rootNode.packageName == "be.kuleuven.icts.authenticator") {
+                val pkgName = rootNode.packageName ?: return@launch
+                if (pkgName == "be.kuleuven.icts.authenticator") {
                     val children = mutableListOf<AccessibilityNodeInfo>()
                     for (i in 0 until rootNode.childCount) {
                         val child = rootNode.getChild(i)
